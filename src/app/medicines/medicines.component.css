@@ -9,10 +9,10 @@ top bar
 
 .top-bar h1 {
     display: inline;
-    width: 300px;
+    width: auto;
     height: 100%;
     line-height: 150px;
-    margin: 200px;
+    margin-left: 200px;
     font-size: var(--text-titulo-1);
     color: var(--on-primary-color);
 }
@@ -213,4 +213,90 @@ page content
 .table-cell {
     width: 33%;
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px) { 
+    .top-bar h1 {
+        margin-left: 20px;
+    }
+
+    .top-bar .user  {
+        margin-right: 40px;
+    }
+    
+    .content {
+        height: calc(100% - 150px);
+        width: calc(100% - 40px);
+    }
+}
+
+
+@media only screen and (max-width: 868px) {
+    /* For mobile phones: */
+    .top-bar {
+        width: 100%;
+        height: 80px;
+    }
+    
+    .top-bar h1 {
+        height: 80px;
+        line-height: 80px;
+        margin: 0 20px;
+        font-size: var( --text-menu-size);
+    }
+
+    .top-bar .user  {
+        float: right;
+        height: 100%;
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .top-bar .user .user-menu {
+        flex-direction: row;
+    }
+    
+    .top-bar .user .user-menu .user-name {
+        margin: 0 18px 0 0;
+        font-size: var(--text-menu-size);
+        color: var(--on-primary-color);
+    }
+ 
+
+    .top-bar .user .user-menu button {
+        height: 49px;
+        width: 90px;
+        font-size: var(--text-menu-size);
+    }
+    
+    .top-bar .user .user-image {
+        display: none;
+
+    }
+
+    .content {
+        height: calc(100% - 80px);
+        width: calc(100% - 40px);
+    }
+
+    .table {
+        font-size: var(--text-menu-size);
+    }
+    
+    .toolbar {
+        flex-direction: column;
+    }
+
+    .toolbar .go-back {
+        width: 100%;
+    }
+
+    .toolbar .go-back button {
+        width: 100%;
+    }
+    
+    .search {
+        width: 100%;
+    }
+    
 }
