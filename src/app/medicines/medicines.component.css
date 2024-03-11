@@ -301,3 +301,9 @@ page content
     }
     
 }
+
+@media only screen and (max-width: 358px) {
+    .top-bar .user  {
+        display: none;
+    }
+}
