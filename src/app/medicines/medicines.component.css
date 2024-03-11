@@ -293,6 +293,7 @@ page content
 
     .toolbar .go-back button {
         width: 100%;
+        font-size: var(--text-menu-size);
     }
     
     .search {
