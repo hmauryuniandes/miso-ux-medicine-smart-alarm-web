@@ -1,9 +1,27 @@
-
-<div class="menu-content">
-    <div class="option" routerLink="/users">
-        <span>Usuarios</span>
+<div class="top-bar">
+    <h1>Medicine Smart Alarms</h1>
+    <div class="user">
+        <div class="user-menu">
+            <span class="user-name">SALEM001</span>
+            <button mat-raised-button routerLink="/login">LOG OUT</button>
+        </div>
+        <div class="user-image">
+            <img src="/assets/user.png" alt="">
+        </div>
     </div>
-    <div class="option" routerLink="/medicines">
-        <span>Medicamentos</span>
+</div>
+<div class="content">
+    <div class="toolbar">
+        <h3>Menú principal</h3>
+    </div>
+    <div class="menu-content">
+        <div class="option-user" routerLink="/users">
+            <div class="image-user"><img src="/assets/menu_user.png" alt=""></div>
+            <span>Usuarios</span>
+        </div>
+        <div class="option-medicamento" routerLink="/medicines">
+            <div class="image-medicamento"><img src="/assets/menu_medicamento.png" alt=""></div>
+            <span>Medicamentos</span>
+        </div>
     </div>
 </div>
