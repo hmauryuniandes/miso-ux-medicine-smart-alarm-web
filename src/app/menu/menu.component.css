@@ -98,11 +98,14 @@ Menú
 .menu-content {
     display: flex;
     margin-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .option-user {
     border: 1px solid #ccc;
     padding: 35px;
+    margin: 30px;
     cursor: pointer;
     border-radius: 16px;
     text-align: center; 
@@ -112,7 +115,7 @@ Menú
 }
 
 .option-medicamento {
-    margin-left: auto;
+    margin: 30px;
     border: 1px solid #ccc;
     padding: 35px;
     cursor: pointer;
@@ -234,13 +237,19 @@ Menú
 }
 
 @media only screen and (max-width: 700px) {
-    .option-user .image-user,
+    .menu-content {
+        flex-direction: column;
+    }
+    /* .option-user .image-user,
     .option-medicamento .image-medicamento {
         display: none;
-    }
+    } */
 }
 
 @media only screen and (max-width: 358px) {
+    .menu-content {
+        flex-direction: column;
+    }
     .top-bar .user  {
         display: none;
     }

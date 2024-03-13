@@ -5,6 +5,7 @@ import { UsersComponent } from './users/users.component';
 import { MedicinesComponent } from './medicines/medicines.component';
 
 export const routes: Routes = [
+    { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
     { path: 'menu', component: MenuComponent },
     { path: 'users', component: UsersComponent },
